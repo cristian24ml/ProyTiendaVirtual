@@ -1,0 +1,39 @@
+:root {
+  --bg-primary: #f3f4f6;
+  --bg-secondary: #ffffff;
+  --bg-header: #1e1e1e;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-header: #ffffff;
+  --border-color: #eaeaea;
+  --accent-color: #f59e0b;
+  --price-color: #2563eb;
+  --font-family: 'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+body.dark-mode {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-header: #0b0f17;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-header: #ffffff;
+  --border-color: #374151;
+  --accent-color: #f59e0b;
+  --price-color: #3b82f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
