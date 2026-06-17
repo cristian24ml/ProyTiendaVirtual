@@ -1,0 +1,73 @@
+# ==========================================
+# Configuración de GitIgnore para proyTienda
+# ==========================================
+
+# Archivos y carpetas del Sistema / IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.patch
+
+# Logs y Reportes
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Temporal
+.temp
+.tmp
+
+# ==========================================
+# BACKEND
+# ==========================================
+# Dependencias y compilados de Node.js
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/coverage/
+backend/.nyc_output/
+
+# Variables de entorno (seguridad)
+backend/.env
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+backend/.env.local
+
+# Datos de tiempo de ejecución
+backend/pids
+backend/*.pid
+backend/*.seed
+backend/*.pid.lock
+
+# ==========================================
+# FRONTEND
+# ==========================================
+# Dependencias y compilados de Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/coverage/
+
+# Variables de entorno y configuraciones locales
+frontend/*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
