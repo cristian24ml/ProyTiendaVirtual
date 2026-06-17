@@ -31,43 +31,50 @@ lerna-debug.log*
 .temp
 .tmp
 
+# =====================================================================
+# ARCHIVOS A INCLUIR (FUENTES DEL PROYECTO)
+# Aseguramos que se incluyan/rastreen las carpetas principales y sus fuentes
+# =====================================================================
+!backend/
+!frontend/
+!bd/
+
 # ==========================================
-# BACKEND
+# EXCLUSIONES: BACKEND (backend)
 # ==========================================
-# Dependencias y compilados de Node.js
+# Ignorar dependencias y compilados de Node.js
 backend/node_modules/
 backend/dist/
 backend/build/
 backend/coverage/
 backend/.nyc_output/
 
-# Variables de entorno (seguridad)
+# Ignorar Variables de entorno (seguridad)
 backend/.env
 backend/.env.development.local
 backend/.env.test.local
 backend/.env.production.local
 backend/.env.local
 
-# Datos de tiempo de ejecución
+# Ignorar datos temporales de ejecución del backend
 backend/pids
 backend/*.pid
 backend/*.seed
 backend/*.pid.lock
 
 # ==========================================
-# FRONTEND
+# EXCLUSIONES: FRONTEND (frontend)
 # ==========================================
-# Dependencias y compilados de Node.js
+# Ignorar dependencias y compilados de Node.js
 frontend/node_modules/
 frontend/dist/
 frontend/dist-ssr/
 frontend/coverage/
 
-# Variables de entorno y configuraciones locales
+# Ignorar variables de entorno y configuraciones locales
 frontend/*.local
 frontend/.env
 frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
-
